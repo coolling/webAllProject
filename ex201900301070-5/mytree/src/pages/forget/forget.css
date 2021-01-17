@@ -1,0 +1,27 @@
+.forgetwin{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 3px #0a090929;
+    border: 1px solid #cbe5fa;
+    margin-left: 400px;
+    margin-top: 100px
+}
+.fortitle p{
+    font: normal normal normal 15px/20px STSong;
+    
+}
+.fortitle{
+    
+    margin-top: 30px
+}
+.index-head a{
+margin-left: 1000px;
+font-size: 22px;
+}
+.index-head p{
+    font-size: 22px;
+}

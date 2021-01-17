@@ -1,0 +1,35 @@
+.out{
+    
+    font-size:30px;
+   
+    color: red;
+    margin-left:1120px;
+    margin-top: 30px;
+    margin-bottom: 0
+    /* position: relative;
+    margin: .137931rem;
+    top: 0.67931rem */
+}
+.index-body{
+    display: flex;
+    height: 100%;
+}
+.index-center{
+    width: 90%;
+}
+.index .index-head img{
+    width: 200px;
+    height: 210px;
+    position: relative;
+    left: -50px;
+    top: -5px
+}
+.index{
+    height: 100%;
+   
+}
+.index-center{
+    /* background-image: url("../../img/centerbgi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover */
+}

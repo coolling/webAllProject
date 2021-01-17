@@ -1,0 +1,48 @@
+.dataformhead{
+    background-color: rgb(226, 236, 245);
+    width: 100%;
+    display: flex;
+ align-items: center;
+ padding: 10px;
+}
+.dataform{
+    width: 80%;
+    border: 1px solid #707070;
+    box-shadow: 3px 3px 3px #0a090929;
+    height: 500px;
+    margin: 15px;
+    margin-top: 30px;
+}
+.dataformhead img{
+    width: 30px;
+    height: 30px;
+}
+.dataformhead p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-left:10px
+}
+.dataformbody p{
+    font-size: 18px
+}
+.dataformbody{
+    padding: 30px;
+    display: flex
+}
+.dataformbody img{
+    width: 180px;
+    height: 200px;
+    margin: 80px;
+    margin-right: 150px;
+    margin-bottom:15px
+}
+.dataimg p{
+    padding: 0;
+    margin: 0;
+    margin-left: 120px
+}
+.datap{
+    margin: 30px;
+  
+}

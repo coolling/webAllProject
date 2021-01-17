@@ -1,0 +1,12 @@
+.socialRes .resForm{
+    margin: 80px;
+    border: 1px solid #707070;
+    padding: 30px;
+    width: 700px;
+}
+.writeT{
+    /* display: flex */
+}
+.writeT img{
+    width: 100px
+}

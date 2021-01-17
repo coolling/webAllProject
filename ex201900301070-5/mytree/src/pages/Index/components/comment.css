@@ -1,0 +1,22 @@
+.comment{
+    margin: 50px;
+}
+.comment-list{
+    margin-left: 70px;
+}
+.comI{
+    width: 800px;
+    margin-right: 20px;
+}
+.coms{
+    margin: 50px;
+    margin-top: 0;
+}
+/* .mytree .coms{
+display: flex
+} */
+.choosetime{
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

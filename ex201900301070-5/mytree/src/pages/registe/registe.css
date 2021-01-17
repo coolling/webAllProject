@@ -1,0 +1,46 @@
+.welcome{
+    font-size: 30px;
+       margin: 15px;
+       font: normal normal normal 35px/40px STSong;
+   }
+   .registin
+   {
+       margin-left: 300px;
+      
+       
+   }
+   .registe{
+    /* background-image: url("../../img/rebac1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+     
+    height: 100%;
+   }
+   .long{
+       /* width: 3.034483rem;
+       margin-left: 1.160655rem
+        */
+   }
+   .index-head{
+    background-color: #DCF2F2;
+    display: flex;
+    height: 50px;
+   
+    align-items: center
+}
+.index-head img{
+    width: 40px;
+    height: 40px;
+  margin: 10px;
+}
+.index-head p{
+    font: normal normal normal 15px/15px STSong;
+letter-spacing: 0px;
+color: rgb(34, 32, 32);
+opacity: 1;
+margin: 0;
+padding: 0;
+}
+/* .index-head .p{
+margin-left: 800px
+} */
