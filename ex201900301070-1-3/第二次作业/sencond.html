@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>web前端开发技术课程第二次作业</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="web前端开发技术陈云玲第二次作业" />
+    <meta name="description" content="web前端开发技术陈云玲第二次作业" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="init();">
+    <div id="container">
+        <div class="wrap">
+            <div class="header">美图欣赏</div>
+            <div class="nav">
+                <ul>
+                    <li class="list">
+                        <h2>景点图</h2>
+                        <div class="hide">
+                            <h5>故宫</h5>
+                            <h5>圆明园</h5>
+                            <h5>天坛</h5>
+                            <h5>长城</h5>
+                            <h5>天安门</h5>
+                            <h5>雍和宫</h5>
+                        </div>
+                    </li>
+
+                    <li class="list">
+                        <h2>小动物图</h2>
+                        <div class="hide">
+                            <h5>猫</h5>
+                            <h5>狗</h5>
+                            <h5>兔子</h5>
+                            <h5>狮子</h5>
+                            <h5>老虎</h5>
+                            <h5>鸟</h5>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <h2>缤纷水果图</h2>
+                        <div class="hide">
+                            <h5>苹果</h5>
+                            <h5>橘子</h5>
+                            <h5>李子</h5>
+                            <h5>西瓜</h5>
+                            <h5>葡萄</h5>
+                            <h5>甘蔗</h5>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <h2>动态图</h2>
+                        <div class="hide">
+                            <h5>动态人</h5>
+                            <h5>动态景</h5>
+
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="right">
+            <div id="main">
+                <div class="mainleft">
+                    <p>
+                        从用光和色彩角度来欣赏，一个好的作品得来不易，如果只有明晃晃一片或者漆黑模糊，那么传递给观赏者的情感会很弱，让人不明所表。好的作品注重色彩和光的呈现，构成了对观赏者的第一视觉冲击，有鲜明，鲜活的感觉。人、物、风景类的摄影作品为了提高其艺术欣赏性，都需要注重用光和色彩。从画面构图和布局来欣赏，好的作品布局合理，内容表现清晰，结构紧凑想呼应，给人以美感。
+                        从画面拍摄质感来欣赏，一件倾注了心血的作品一定是高质感的，随着摄影技术的进步，高品质的摄影设备，照相机、镜头、胶卷、相纸、冲洗技术等，都是决定一件作品是否能最终成功的关键。
+                    </p>
+
+                </div>
+
+                <img id="pic" src="images/tp1.png" border="0" alt="" onmouseover="pause();" onmouseout="reStart();">
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><strong>友情链接</strong>
+                        <select size="1" name="d1" onchange="a(this.selectedindex);" id="select">
+                            <option value="http://www.icourses.cn/home/">其他好图网站</option>
+                            <option value="http://www.jingpinke.com/">好图网</option>
+                            <option value="http://jpkc.fudan.edu.cn/">美图网</option>
+                            <option value="http://jpkc.nwu.edu.cn/course.php#xb_jpkc">超好看图网</option>
+                            <option value="http://www.cncourse.com/portal/indexdefault">快看图网</option>
+                            <option value="http://www.intel.com/cn/index.htm">web图网</option>
+                        </select>
+
+                    </li>
+                    <li>web前端开发技术课程陈云玲第二次作业;保留所有权利，未经允许不得复制、镜像</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function a(index){
+  window.open(document.getElementById("select").options[document.getElementById("select").options.selectedIndex].value)
+    }
+    function qiehuan(num) {
+        for (var id = 0; id <= 8; id++) {
+            if (id == num) {
+                document.getElementById("qh_con" + id).style.display = "block";
+                document.getElementById("mynav" + id).className = "nav_on";
+            } else {
+                document.getElementById("qh_con" + id).style.display = "none";
+                document.getElementById("mynav" + id).className = "";
+            }
+        }
+    }
+    var curScreen = 1; // 当前显示的图像
+    var maxScreen = 5; // 最多课前换的图象数
+    var timer = null;
+    function $(id) {
+        return document.getElementById(id);
+    }
+    function switchpic() {
+        if (curScreen == maxScreen) {
+            curScreen = 1;
+        } else {
+            curScreen++;
+        }
+        $("pic").src = "images/tp" + curScreen + ".jpg"; // 更换图像的文件
+    }
+    function reStart() {
+        switchpic();
+        init();
+    }
+    function pause() {
+        clearInterval(timer);
+    }
+    function init() {
+        timer = setInterval('switchpic();', 1000);
+    }
+</script>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background-image: url("./login-bac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+html{
+    height: 100%; 
+}
+.registe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registeWin {
+  width: 500px;
+  float: left;
+  height: 500px;
+  margin: 0 20px;
+  background: white;
+  opacity: 0.6;
+margin-top: 100px;
+padding-left: 50px;
+}
+.p {
+  color: red;
+  margin-left: 20px;
+  display: inline-block;
+}
+.c {
+  color: red;
+  margin-left: 4px;
+  display: inline-block;
+}
+.l {
+  font-size: 18px;
+}
+
+.inputs {
+  height: 30px;
+  width: 300px;
+}
+
+.usericon {
+  position: absolute;
+  right: 18px;
+  top: 2px;
+  background-image: url("./user.png");
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+}
+.passicon {
+    position: absolute;
+    right: 18px;
+    top: 2px;
+    background-image: url("./password.png");
+    background-size: cover;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+  }
+  .phoneicon {
+    position: absolute;
+    right: 16px;
+    top: 2px;
+    background-image: url("./phone.png");
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+  }
+  .yanicon {
+    position: absolute;
+    right: 18px;
+    top: 2px;
+    background-image: url("./yanzheng.png");
+    background-size: cover;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+  }
+      
+.inputWin{
+    height:35px;width:300px;position:relative;display:inline;
+}
+.ok{
+    margin-left:100px;height:30px;width:300px;background-color:red;display:inline-block;
+}
+.words{
+    width: 500px;
+    line-height: 35px;
+    font-size: 20px;
+    padding-right: 150px;
+   
+}

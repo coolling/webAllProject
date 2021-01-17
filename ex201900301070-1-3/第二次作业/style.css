@@ -1,0 +1,143 @@
+
+@charset "utf-8"; 
+*{
+	font-size:12px; 
+	color:#666666;
+	font-family:"宋体",Arial,Helvetica,sans-serif;
+}
+body {
+	margin: 0px auto;
+	padding: 0px;
+    text-align: center;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+
+#container {
+	width: 100%;
+	padding: 0 ;
+    margin: 0 ;
+   
+    height: 100%;
+}
+
+
+#main{
+	width:100%;
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main img{
+    width: 40%;
+    height:350px;
+    z-index: 1;
+}
+.right{
+    width: 100%;
+}
+.bottom{
+	clear:both;
+	height:70px;
+	background:rgb(212, 239, 241);
+	text-align:center;
+	padding-top:20px;
+	color:white;
+	font-size:18px;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom ul {
+	list-style:none;
+	color:#FFEEDD;
+}
+#header{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+.title{
+    font-size: 30px;
+    padding: 10px;
+}
+.wrap{
+    width: 100%;
+    height: 100px;
+    background-color: #d2dbf5;
+    display: flex;
+    z-index: 2;
+}
+.header{
+    width: 70px;
+    height: 100px;
+    font-size: 32px;
+    color: rgb(182, 107, 107);
+    text-align: center;
+    padding-left: 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+  
+    padding: 0;
+    position: absolute;
+}
+.list{
+    padding: 0;
+    margin-left:100px;
+  
+        float: left;
+     
+    
+}
+.list h2{
+    position: relative;
+   
+   
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    transition: .5s;
+}
+
+.list:hover .hide{
+    height: 350px;
+     transition: .5s;
+}
+
+.hide{
+    overflow: hidden;
+    height: 0;
+    transition: .5s;
+}
+.hide h5{
+    padding: 10px 0;
+    margin: 3px;
+    background-color: #caf1e2;
+    text-align: center;
+    color:#fff;
+    border-bottom:#42495d;
+    font-size: 18px;
+    z-index: 2;
+}
+.mainleft{
+    width: 420px;
+    padding-right: 150px;
+    
+}
+.mainleft p{
+    font-size:22px; 
+	color:#666666;
+	font-family:"宋体",Arial,Helvetica,sans-serif;
+}

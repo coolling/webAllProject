@@ -1,0 +1,41 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+picPath: file:/Users/mac/Desktop/img/
+
+aliyun:
+  xxx: aaaabbb
+  yyy:
+#    mybatis配置
+mybatis:
+  #扫描映射文件
+  mapper-locations: classpath:mapper/*.xml
+  #配置别名扫面的包
+  type-aliases-package: com.example.sduManage.entity
+  #开启驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true
+
+checkString: xszxjcwx
+
+expireTime: 2592000000
+#连接数据库的信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///SduManage?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 901190Aa
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    static-path-pattern: /img/**
+  resources:
+    static-locations: file:/Users/mac/Desktop/Treeback/SduManage/src/img/
+
+
+logging:
+  level:
+     com.example.demo.mapper: DEBUG
+#查看sql语句

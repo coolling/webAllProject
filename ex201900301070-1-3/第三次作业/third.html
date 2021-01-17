@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>web第三次作业</title>
+  <style>
+.title{
+  font-size: 25px;
+  text-align: center;
+  color: rgb(38, 39, 33);
+
+}
+body{
+  background-color: rgb(220, 248, 236)
+}
+.all{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 15%;
+  height: 400px;
+  margin-top: 100px;
+  opacity: 0.7;
+}
+.all div{
+  width: 70%;
+  height: 80px;
+  margin: 20px;
+}
+#example-1 input{
+  width: 300px;
+  height: 35px;
+}
+  </style>
+  <script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+
+</head>
+
+<body>
+  <p class="title">基于vue前端框架的应用实例实现，用v-model指令在表单控件上创建双向数据绑定</p>
+  <div class="all">
+      <div id="example-1" >
+          <input v-model="message" placeholder="edit me">
+          <p>您输入了: {{ message }}</p>
+        </div>
+      
+        <div id="example-2" >
+          <input type="checkbox" id="react" value="react" v-model="checkedNames">
+          <label for="jack">react</label>
+          <input type="checkbox" id="vue" value="vue" v-model="checkedNames">
+          <label for="john">vue</label>
+          <input type="checkbox" id="springboot" value="springboot" v-model="checkedNames">
+          <label for="mike">springboot</label>
+          <br>
+          <span>Checked names: {{ checkedNames }}</span>
+        </div>
+        <script>
+          
+        </script>
+      
+        <div id="example-3" >
+          <select v-model="selected">
+            <option v-for="option in options" v-bind:value="option.value">
+              {{ option.text }}
+            </option>
+          </select>
+          <span>Selected: {{ selected }}</span>
+        </div>
+  </div>
+  
+  <script>
+     new Vue({
+      el: '#example-1',
+      data: {
+        message: ''
+      }
+    })
+    new Vue({
+      el: '#example-3',
+      data: {
+        selected: 'A',
+        options: [
+          { text: 'One', value: 'A' },
+          { text: 'Two', value: 'B' },
+          { text: 'Three', value: 'C' }
+        ]
+      }
+    })
+    new Vue({
+      el: '#example-2',
+      data: {
+        checkedNames: []
+      }
+    })
+  </script>
+</body>
+
+</html>
